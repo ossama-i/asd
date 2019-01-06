@@ -1,0 +1,4 @@
+val people = 1 to 100
+val answer = people.map(x => x * x).map(_ % 100).zip(people).
+groupBy(_._1).find(p => p._1 == p._2.length)
+println(answer)
